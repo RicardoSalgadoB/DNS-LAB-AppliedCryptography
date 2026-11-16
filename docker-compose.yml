@@ -1,0 +1,52 @@
+x-bind: &bind
+  build: .
+  image: dns-bind:local
+
+services:
+  root:
+    <<: *bind
+    container_name: root
+    networks: { dnsnet: { ipv4_address: 172.30.0.10 } }
+    volumes:
+      - ./servers/root/named.conf:/etc/bind/named.conf:ro
+      - ./servers/root/zones:/var/lib/bind:ro
+
+  unsigned:
+    <<: *bind
+    container_name: unsigned
+    networks: { dnsnet: { ipv4_address: 172.30.0.20 } }
+    volumes:
+      - ./servers/unsigned/named.conf:/etc/bind/named.conf:ro
+      - ./servers/unsigned/zones:/var/lib/bind:ro
+
+  alpha:
+    <<: *bind
+    container_name: alpha
+    networks: { dnsnet: { ipv4_address: 172.30.0.30 } }
+    volumes:
+      - ./servers/alpha/named.conf:/etc/bind/named.conf:ro
+      - ./servers/alpha/zones:/var/lib/bind:ro
+
+  recursive1:
+    <<: *bind
+    container_name: recursive1
+    networks: { dnsnet: { ipv4_address: 172.30.0.100 } }
+    volumes:
+      - ./servers/recursive1/named.conf:/etc/bind/named.conf:ro
+      - ./servers/recursive1/zones:/var/lib/bind:ro
+
+  client:
+    image: nicolaka/netshoot      # multi-arch, runs natively on ARM
+    container_name: client
+    command: sleep infinity
+    dns: [172.30.0.100]
+    networks: { dnsnet: { ipv4_address: 172.30.0.200 } }
+
+networks:
+  dnsnet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: br-dns
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24

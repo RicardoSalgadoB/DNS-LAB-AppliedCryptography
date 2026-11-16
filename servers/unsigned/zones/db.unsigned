@@ -1,0 +1,13 @@
+$TTL 86400
+@ IN SOA ns.unsigned. admin.unsigned. (
+    2026082002   ; serial
+    3600         ; refresh
+    900          ; retry
+    604800       ; expire
+    86400 )      ; negative TTL
+@ IN NS ns.unsigned.
+ns.unsigned. IN A 172.30.0.20
+
+; Delegation to alpha
+alpha.unsigned.    IN NS ns.alpha.unsigned.
+ns.alpha.unsigned. IN A  172.30.0.30     ; glue record

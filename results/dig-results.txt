@@ -1,0 +1,266 @@
+==================================================
+$ dig @172.30.0.100 . SOA        (2026-11-16 17:33:05)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 . SOA
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40284
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: c8d8b51a82dd747b010000006afb92b172ccdaf8e16e2b8a (good)
+;; QUESTION SECTION:
+;.				IN	SOA
+
+;; ANSWER SECTION:
+.			86400	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:05 UTC 2026
+;; MSG SIZE  rcvd: 104
+
+
+==================================================
+$ dig @172.30.0.100 . NS        (2026-11-16 17:33:06)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 . NS
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 31913
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 100468d7a52fe511010000006afb92b2cab6fbbb9f527ee7 (good)
+;; QUESTION SECTION:
+;.				IN	NS
+
+;; ANSWER SECTION:
+.			86400	IN	NS	ns.root.
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:06 UTC 2026
+;; MSG SIZE  rcvd: 76
+
+
+==================================================
+$ dig @172.30.0.100 ns.root A        (2026-11-16 17:33:07)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 ns.root A
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45429
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 31a4f59e85bb03f7010000006afb92b35fbca064b5f5c2ad (good)
+;; QUESTION SECTION:
+;ns.root.			IN	A
+
+;; ANSWER SECTION:
+ns.root.		86400	IN	A	172.30.0.10
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:07 UTC 2026
+;; MSG SIZE  rcvd: 80
+
+
+==================================================
+$ dig @172.30.0.100 unsigned SOA        (2026-11-16 17:33:09)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unsigned SOA
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63039
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: e79029f69618e267010000006afb92b56a764f0282e693a2 (good)
+;; QUESTION SECTION:
+;unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+unsigned.		86400	IN	SOA	ns.unsigned. admin.unsigned. 2026082002 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:09 UTC 2026
+;; MSG SIZE  rcvd: 110
+
+
+==================================================
+$ dig @172.30.0.100 unsigned NS        (2026-11-16 17:33:10)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unsigned NS
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58286
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 590178afb2a68a3a010000006afb92b656b49087280bfc6a (good)
+;; QUESTION SECTION:
+;unsigned.			IN	NS
+
+;; ANSWER SECTION:
+unsigned.		86400	IN	NS	ns.unsigned.
+
+;; ADDITIONAL SECTION:
+ns.unsigned.		86400	IN	A	172.30.0.20
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:10 UTC 2026
+;; MSG SIZE  rcvd: 98
+
+
+==================================================
+$ dig @172.30.0.100 ns.unsigned A        (2026-11-16 17:33:11)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 ns.unsigned A
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36234
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 99de50ee17757ddf010000006afb92b79227dafbcab3f107 (good)
+;; QUESTION SECTION:
+;ns.unsigned.			IN	A
+
+;; ANSWER SECTION:
+ns.unsigned.		86400	IN	A	172.30.0.20
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:11 UTC 2026
+;; MSG SIZE  rcvd: 84
+
+
+==================================================
+$ dig @172.30.0.100 alpha.unsigned SOA        (2026-11-16 17:33:12)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 alpha.unsigned SOA
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4366
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: c790782d720b4a7e010000006afb92b8a00d5955d6ca3f7e (good)
+;; QUESTION SECTION:
+;alpha.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+alpha.unsigned.		86400	IN	SOA	ns.alpha.unsigned. admin.alpha.unsigned. 2026082001 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:12 UTC 2026
+;; MSG SIZE  rcvd: 116
+
+
+==================================================
+$ dig @172.30.0.100 alpha.unsigned NS        (2026-11-16 17:33:13)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 alpha.unsigned NS
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44344
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 39cf156c24e8ac94010000006afb92b917f188213d6bcb32 (good)
+;; QUESTION SECTION:
+;alpha.unsigned.			IN	NS
+
+;; ANSWER SECTION:
+alpha.unsigned.		86400	IN	NS	ns.alpha.unsigned.
+
+;; ADDITIONAL SECTION:
+ns.alpha.unsigned.	86400	IN	A	172.30.0.30
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:13 UTC 2026
+;; MSG SIZE  rcvd: 104
+
+
+==================================================
+$ dig @172.30.0.100 ns.alpha.unsigned A        (2026-11-16 17:33:15)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 ns.alpha.unsigned A
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41311
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: cb2ed43d8501d81b010000006afb92bbb437c5377710d9e3 (good)
+;; QUESTION SECTION:
+;ns.alpha.unsigned.		IN	A
+
+;; ANSWER SECTION:
+ns.alpha.unsigned.	86400	IN	A	172.30.0.30
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:15 UTC 2026
+;; MSG SIZE  rcvd: 90
+
+
+==================================================
+$ dig @172.30.0.100 www.alpha.unsigned A        (2026-11-16 17:33:16)
+==================================================
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 www.alpha.unsigned A
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39194
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: c4e0de5eaf9fb303010000006afb92bc43c37d8656fa106a (good)
+;; QUESTION SECTION:
+;www.alpha.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.alpha.unsigned.	86400	IN	A	172.30.0.31
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 16 23:33:16 UTC 2026
+;; MSG SIZE  rcvd: 91
+
+

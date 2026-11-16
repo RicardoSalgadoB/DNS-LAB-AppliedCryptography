@@ -1,0 +1,219 @@
+
+; <<>> DiG 9.20.23 <<>> . SOA
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 741
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: bc8b5b267c48bf8d010000006afb85ac1484a2f970ce03e2 (good)
+;; QUESTION SECTION:
+;.				IN	SOA
+
+;; ANSWER SECTION:
+.			85827	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:37:32 UTC 2026
+;; MSG SIZE  rcvd: 104
+
+
+; <<>> DiG 9.20.23 <<>> . NS
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29084
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 4b88572f4c97d763010000006afb85b5027e045c8ac8c274 (good)
+;; QUESTION SECTION:
+;.				IN	NS
+
+;; ANSWER SECTION:
+.			84389	IN	NS	ns.root.
+
+;; ADDITIONAL SECTION:
+ns.root.		85818	IN	A	172.30.0.10
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:37:41 UTC 2026
+;; MSG SIZE  rcvd: 92
+
+
+; <<>> DiG 9.20.23 <<>> ns.root A
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62473
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: ead5c9c709cbf34b010000006afb85c966bd750ef5a818d4 (good)
+;; QUESTION SECTION:
+;ns.root.			IN	A
+
+;; ANSWER SECTION:
+ns.root.		86400	IN	A	172.30.0.10
+
+;; Query time: 4 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:38:01 UTC 2026
+;; MSG SIZE  rcvd: 80
+
+
+; <<>> DiG 9.20.23 <<>> unsigned SOA
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32067
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: ea9970ec51b669b4010000006afb85da5f0aa3980037f1f8 (good)
+;; QUESTION SECTION:
+;unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+unsigned.		85861	IN	SOA	ns.unsigned. admin.unsigned. 2026082002 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:38:18 UTC 2026
+;; MSG SIZE  rcvd: 110
+
+
+; <<>> DiG 9.20.23 <<>> unsigned NS
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20464
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 36abbdba99eeb1c0010000006afb85e0fd74cdc2e36cf19e (good)
+;; QUESTION SECTION:
+;unsigned.			IN	NS
+
+;; ANSWER SECTION:
+unsigned.		84346	IN	NS	ns.unsigned.
+
+;; ADDITIONAL SECTION:
+ns.unsigned.		85873	IN	A	172.30.0.20
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:38:24 UTC 2026
+;; MSG SIZE  rcvd: 98
+
+
+; <<>> DiG 9.20.23 <<>> ns.unsigned A
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 33332
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: b5c380d1d72b7552010000006afb85ec275145eb5e7c98d2 (good)
+;; QUESTION SECTION:
+;ns.unsigned.			IN	A
+
+;; ANSWER SECTION:
+ns.unsigned.		85861	IN	A	172.30.0.20
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:38:36 UTC 2026
+;; MSG SIZE  rcvd: 84
+
+
+; <<>> DiG 9.20.23 <<>> alpha.unsigned SOA
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41792
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 236ab7ea0b9d14ec010000006afb85fcf1ebe67bb2c0d309 (good)
+;; QUESTION SECTION:
+;alpha.unsigned.			IN	SOA
+
+;; ANSWER SECTION:
+alpha.unsigned.		85882	IN	SOA	ns.alpha.unsigned. admin.alpha.unsigned. 2026082001 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:38:52 UTC 2026
+;; MSG SIZE  rcvd: 116
+
+
+; <<>> DiG 9.20.23 <<>> alpha.unsigned NS
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11176
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: d4ebba9178e82046010000006afb860275ab119040c68a8a (good)
+;; QUESTION SECTION:
+;alpha.unsigned.			IN	NS
+
+;; ANSWER SECTION:
+alpha.unsigned.		84312	IN	NS	ns.alpha.unsigned.
+
+;; ADDITIONAL SECTION:
+ns.alpha.unsigned.	84689	IN	A	172.30.0.30
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:38:58 UTC 2026
+;; MSG SIZE  rcvd: 104
+
+
+; <<>> DiG 9.20.23 <<>> ns.alpha.unsigned A
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40747
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 04307f9ae8bd60c0010000006afb86112003110cba17e9cc (good)
+;; QUESTION SECTION:
+;ns.alpha.unsigned.		IN	A
+
+;; ANSWER SECTION:
+ns.alpha.unsigned.	84674	IN	A	172.30.0.30
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:39:13 UTC 2026
+;; MSG SIZE  rcvd: 90
+
+
+; <<>> DiG 9.20.23 <<>> www.alpha.unsigned A
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21086
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: c8b5007c7f7c003f010000006afb8619e92b4d066f2899d2 (good)
+;; QUESTION SECTION:
+;www.alpha.unsigned.		IN	A
+
+;; ANSWER SECTION:
+www.alpha.unsigned.	84289	IN	A	172.30.0.31
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11) (UDP)
+;; WHEN: Mon Nov 16 22:39:21 UTC 2026
+;; MSG SIZE  rcvd: 91
+
