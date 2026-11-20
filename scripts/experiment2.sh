@@ -8,7 +8,7 @@ OUTPUT_FILE="$OUT/experiment2_results.txt"
 
 DOMAINS=("gob.mx" "unam.mx")
 RECORDS=("SOA" "NS" "A" "AAAA" "DNSKEY" "RRSIG" "DS" "NSEC" "NSEC3")
-LOCAL_RESOLVER="172.30.0.100"
+LOCAL_RESOLVER="172.30.0.101"
 
 : > "$OUTPUT_FILE"
 
