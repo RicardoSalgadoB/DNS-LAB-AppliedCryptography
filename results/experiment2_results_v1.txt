@@ -1,0 +1,896 @@
+========================================
+8.8.8.8 server
+========================================
+--- Records SOA ---
+$ dig @8.8.8.8 gob.mx SOA    (2026-11-20 07:56:14)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx SOA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48305
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	SOA
+
+;; ANSWER SECTION:
+gob.mx.			19913	IN	SOA	m.mx-ns.mx. hostmaster.nic.mx. 1795160217 900 900 604800 1800
+
+;; Query time: 102 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:14 UTC 2026
+;; MSG SIZE  rcvd: 94
+
+
+$ dig @8.8.8.8 unam.mx SOA    (2026-11-20 07:56:15)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx SOA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37657
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	SOA
+
+;; ANSWER SECTION:
+unam.mx.		7200	IN	SOA	ns1.unam.mx. dns.unam.mx. 2026111903 3600 1200 1814400 300
+
+;; Query time: 40 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:16 UTC 2026
+;; MSG SIZE  rcvd: 80
+
+
+--- Records NS ---
+$ dig @8.8.8.8 gob.mx NS    (2026-11-20 07:56:17)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx NS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32206
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	NS
+
+;; ANSWER SECTION:
+gob.mx.			16082	IN	NS	e.mx-ns.mx.
+gob.mx.			16082	IN	NS	i.mx-ns.mx.
+gob.mx.			16082	IN	NS	m.mx-ns.mx.
+gob.mx.			16082	IN	NS	x.mx-ns.mx.
+gob.mx.			16082	IN	NS	c.mx-ns.mx.
+gob.mx.			16082	IN	NS	o.mx-ns.mx.
+
+;; Query time: 30 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:17 UTC 2026
+;; MSG SIZE  rcvd: 137
+
+
+$ dig @8.8.8.8 unam.mx NS    (2026-11-20 07:56:18)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx NS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52797
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	NS
+
+;; ANSWER SECTION:
+unam.mx.		5795	IN	NS	ns4.unam.mx.
+unam.mx.		5795	IN	NS	ns2.unam.mx.
+unam.mx.		5795	IN	NS	ns1.unam.mx.
+unam.mx.		5795	IN	NS	ns5.unam.mx.
+unam.mx.		5795	IN	NS	ns3.unam.mx.
+
+;; Query time: 30 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:18 UTC 2026
+;; MSG SIZE  rcvd: 126
+
+
+--- Records A ---
+$ dig @8.8.8.8 gob.mx A    (2026-11-20 07:56:19)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx A +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51468
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	A
+
+;; ANSWER SECTION:
+gob.mx.			18466	IN	A	207.249.122.223
+
+;; Query time: 27 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:19 UTC 2026
+;; MSG SIZE  rcvd: 51
+
+
+$ dig @8.8.8.8 unam.mx A    (2026-11-20 07:56:20)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx A +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44758
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	A
+
+;; ANSWER SECTION:
+unam.mx.		6059	IN	A	132.248.166.17
+unam.mx.		6059	IN	A	132.248.166.18
+unam.mx.		6059	IN	A	132.248.166.19
+unam.mx.		6059	IN	A	132.248.166.20
+
+;; Query time: 30 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:20 UTC 2026
+;; MSG SIZE  rcvd: 100
+
+
+--- Records AAAA ---
+$ dig @8.8.8.8 gob.mx AAAA    (2026-11-20 07:56:21)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx AAAA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52911
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	AAAA
+
+;; AUTHORITY SECTION:
+gob.mx.			1256	IN	SOA	m.mx-ns.mx. hostmaster.nic.mx. 1795160217 900 900 604800 1800
+
+;; Query time: 35 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:21 UTC 2026
+;; MSG SIZE  rcvd: 94
+
+
+$ dig @8.8.8.8 unam.mx AAAA    (2026-11-20 07:56:22)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx AAAA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 943
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	AAAA
+
+;; ANSWER SECTION:
+unam.mx.		5665	IN	AAAA	2001:1218:3000:180::19
+unam.mx.		5665	IN	AAAA	2001:1218:3000:180::17
+unam.mx.		5665	IN	AAAA	2001:1218:3000:180::18
+unam.mx.		5665	IN	AAAA	2001:1218:3000:180::20
+
+;; Query time: 25 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:22 UTC 2026
+;; MSG SIZE  rcvd: 148
+
+
+--- Records DNSKEY ---
+$ dig @8.8.8.8 gob.mx DNSKEY    (2026-11-20 07:56:23)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx DNSKEY +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42046
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	DNSKEY
+
+;; ANSWER SECTION:
+gob.mx.			21600	IN	DNSKEY	257 3 8 AwEAAa6ANMubgmwOL1LdYuVrEdKSKLQIzf+qqNmf00MeYjBln9GV0ZXJ 8iyPEiyuYIrcZgEiTQlJBGvPCh0+bdON3jPNRf+i81lyeMX3yf7CIpov +KbVcVk95dQONBZruMzTt+hImfH6S/HZpur/fnDLL7odrDia8EkV0S8f EZZJzBRNyQDHMe27GbyUrQwy6I7MwhSkAAxt4RDH41ijKhpPr6mQb8ge /1OqV2K+/qqH/rPtO5LeE2pY1etRZVwAgoJR0we9dXxBJmvNsAMVQksB lXkkow0Zwyxd1xf1xvaqL/2nPVfvIHs3jPjk3c3FdwIKVqvLc+H2/UKU HN3TxK3CYuE=
+gob.mx.			21600	IN	DNSKEY	256 3 8 AwEAAcjFdZZthKNRQ2qBUosyyyrHucPMLCeBQfqdpuH03IGpspwu8z6L iIiCck340exSutVy7j10k7PDVhwqq8A/Mu2jVmFTk1bGTT0laMu6NOj+ lRsyyX9/xQr4DpK2dwwiXf83sZMFZIkw7YRr1179NO3Z9NMe7gLN1TVD +5lnSTqh
+
+;; Query time: 32 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:23 UTC 2026
+;; MSG SIZE  rcvd: 459
+
+
+$ dig @8.8.8.8 unam.mx DNSKEY    (2026-11-20 07:56:25)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx DNSKEY +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43918
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	DNSKEY
+
+;; ANSWER SECTION:
+unam.mx.		3792	IN	DNSKEY	256 3 13 k3aQLYzeWL2MigiAPt8DdZGTXNHzsdvkkmYJ9aWeh2U1eQfoWOlnWs1Z PWUH4orNS2Di0KXLkA4QK+74lN+mLA==
+unam.mx.		3792	IN	DNSKEY	257 3 13 AbAMgLJhQLFvPgAxt2J2P7Ity1taP68pYGtULy8JtDT2NMjx/a5dyMZK klaYZPoaCzClVrRfTzsvpzBblllhwA==
+
+;; Query time: 30 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:25 UTC 2026
+;; MSG SIZE  rcvd: 196
+
+
+--- Records RRSIG ---
+$ dig @8.8.8.8 gob.mx RRSIG    (2026-11-20 07:56:26)
+;; Truncated, retrying in TCP mode.
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx RRSIG +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20550
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	RRSIG
+
+;; ANSWER SECTION:
+gob.mx.			21600	IN	RRSIG	A 8 2 86400 20261220000000 20261120000000 106 gob.mx. oUA/9+9YuYL0ATuO0L4uWiHaviEHF1hSIWLAsyT/pWVlZHCl3cL6PGKg sOQ6YgvjqfVnBOrBwkNhw9mPCQjkYO7mnXMPz5Al8LeYhfAisddJG043 uqyZQAP0m1AGj0S3V0w3SMMu2BgV3LfN01FHczijHaHVsbEjRjtltyIb 7cw=
+
+;; Query time: 31 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (TCP)
+;; WHEN: Fri Nov 20 13:56:26 UTC 2026
+;; MSG SIZE  rcvd: 201
+
+
+$ dig @8.8.8.8 unam.mx RRSIG    (2026-11-20 07:56:27)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx RRSIG +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14493
+;; flags: qr rd ra; QUERY: 1, ANSWER: 9, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	RRSIG
+
+;; ANSWER SECTION:
+unam.mx.		7200	IN	RRSIG	NS 13 2 7200 20270225120000 20261119235811 42326 unam.mx. 9OHKeqloMbrdf2s/YQnQGqKxNf6BO/ExLhof12OqWGfhJa863aD3iHCk mBSlh79Ca568KwGkkkEMaACge/HndA==
+unam.mx.		7200	IN	RRSIG	DNSKEY 13 2 7200 20270225120000 20261119235811 42326 unam.mx. l2ElBxplgcJX9fTxvzF/6FXvv3ZaYimc+tnJf5uBpk8TxS1x1ZaRFpg+ pp18EOIgxEkauSkhWFstfs5m1EyW3A==
+unam.mx.		7200	IN	RRSIG	SOA 13 2 7200 20270225120000 20261119235811 42326 unam.mx. STS9ANIBH4coo4rEivPRWK7dTYpAamxTuZM1UgQ9zmIMJ/5EeH0x1jHO Qw18kNN3TUfHyy/cZW7cOXCtKrWDvA==
+unam.mx.		300	IN	RRSIG	NSEC 13 2 300 20270225120000 20261119235811 42326 unam.mx. CGqZmeOedBOcrOSArs5uknfI/ycxzOI1g1pLoea4OPkiNTUw2AWJqvUI N4fcC4mFjlx+JDXMziII4ZnnHW/I1Q==
+unam.mx.		7200	IN	RRSIG	TXT 13 2 7200 20270225120000 20261119235811 42326 unam.mx. mPP/nmymXPDOoMGq3i5tqQ/63HRKnSFUmhVSUfBs2b/ppZVnSBzTghRL Y2BTG/91MqukYMq2L7ShcjctDE7o2w==
+unam.mx.		7200	IN	RRSIG	AAAA 13 2 7200 20270225120000 20261119235811 42326 unam.mx. TJqlDk7QE0+Y5iG3P+Tgxmqv1FtoQj6pEkjTU6EPhIjWKJ3vg3rGP5U6 gq0xRLWSTiohXxJYW12TcpvllXcctQ==
+unam.mx.		7200	IN	RRSIG	MX 13 2 7200 20270225120000 20261119235811 42326 unam.mx. cdzXm4N/s8CyXz4whigIkKTzngE1nNLZL/vkFzpkzPMwBt6Gd+Z6GVw8 6nbxCGgYSZnZFuenK022LPS6HOEj2A==
+unam.mx.		7200	IN	RRSIG	DNSKEY 13 2 7200 20270225120000 20261119235811 54058 unam.mx. whcJgrY4XrEik231vgPwqQ12La/G7JghFjtp6RvlFiJUdX+aDJWbDa+f NxgjRLen9tXcruVL4Zp7DvLViSHx0Q==
+unam.mx.		7200	IN	RRSIG	A 13 2 7200 20270225120000 20261119235811 42326 unam.mx. QNGIOcD00+Rp+f4MovksdgegyVF31eqpgdWEV1pGAtuN0UmZbPJcEFmp j35gDr9XcIR5haM7i9quEpqo186T7w==
+
+;; Query time: 34 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:27 UTC 2026
+;; MSG SIZE  rcvd: 963
+
+
+--- Records DS ---
+$ dig @8.8.8.8 gob.mx DS    (2026-11-20 07:56:28)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx DS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51806
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	DS
+
+;; ANSWER SECTION:
+gob.mx.			227	IN	DS	43850 8 2 EC93276C0EBD70E7A3F63C673D5A2D614EC97384BF705BF858A9820C E396F043
+
+;; Query time: 29 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:28 UTC 2026
+;; MSG SIZE  rcvd: 83
+
+
+$ dig @8.8.8.8 unam.mx DS    (2026-11-20 07:56:29)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx DS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18774
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	DS
+
+;; ANSWER SECTION:
+unam.mx.		21441	IN	DS	54058 13 2 EA3EB01183E5BC13ACAC4692831EA81DA9B6D8F402AB3AB4FA1A5C1E F52869E0
+
+;; Query time: 27 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:29 UTC 2026
+;; MSG SIZE  rcvd: 84
+
+
+--- Records NSEC ---
+$ dig @8.8.8.8 gob.mx NSEC    (2026-11-20 07:56:30)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx NSEC +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29982
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	NSEC
+
+;; AUTHORITY SECTION:
+gob.mx.			1800	IN	SOA	m.mx-ns.mx. hostmaster.nic.mx. 1795160217 900 900 604800 1800
+
+;; Query time: 31 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:30 UTC 2026
+;; MSG SIZE  rcvd: 94
+
+
+$ dig @8.8.8.8 unam.mx NSEC    (2026-11-20 07:56:31)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx NSEC +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24836
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	NSEC
+
+;; ANSWER SECTION:
+unam.mx.		300	IN	NSEC	,firmadocumentos.unam.mx. A NS SOA MX TXT AAAA RRSIG NSEC DNSKEY
+
+;; Query time: 38 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:32 UTC 2026
+;; MSG SIZE  rcvd: 83
+
+
+--- Records NSEC3 ---
+$ dig @8.8.8.8 gob.mx NSEC3    (2026-11-20 07:56:33)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 gob.mx NSEC3 +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63549
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;gob.mx.				IN	NSEC3
+
+;; AUTHORITY SECTION:
+gob.mx.			1800	IN	SOA	m.mx-ns.mx. hostmaster.nic.mx. 1795160217 900 900 604800 1800
+
+;; Query time: 33 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:33 UTC 2026
+;; MSG SIZE  rcvd: 94
+
+
+$ dig @8.8.8.8 unam.mx NSEC3    (2026-11-20 07:56:34)
+
+; <<>> DiG 9.20.23 <<>> @8.8.8.8 unam.mx NSEC3 +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15788
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;unam.mx.			IN	NSEC3
+
+;; AUTHORITY SECTION:
+unam.mx.		300	IN	SOA	ns1.unam.mx. dns.unam.mx. 2026111903 3600 1200 1814400 300
+
+;; Query time: 35 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Fri Nov 20 13:56:34 UTC 2026
+;; MSG SIZE  rcvd: 80
+
+
+========================================
+Local recursive server
+========================================
+--- Records SOA ---
+$ dig @172.30.0.100 gob.mx SOA    (2026-11-20 07:56:35)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx SOA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 31427
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 06b5567a5c7089cf010000006b00519341cabb86d289852c (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	SOA
+
+;; AUTHORITY SECTION:
+.			0	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 2 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:35 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx SOA    (2026-11-20 07:56:36)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx SOA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 34000
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 0f2040251ee4bbf1010000006b005194a348bf8f48b476dc (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	SOA
+
+;; AUTHORITY SECTION:
+.			0	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 2 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:36 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records NS ---
+$ dig @172.30.0.100 gob.mx NS    (2026-11-20 07:56:37)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx NS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 32525
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: e92b77d85332785f010000006b0051965e765948367e699e (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	NS
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:38 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx NS    (2026-11-20 07:56:39)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx NS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 30173
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 7270accac3af56dd010000006b0051973428acd7369d1a77 (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	NS
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:39 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records A ---
+$ dig @172.30.0.100 gob.mx A    (2026-11-20 07:56:40)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx A +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 55730
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 7da98dea5903ec43010000006b005198be39ea7b97d4e394 (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	A
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:40 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx A    (2026-11-20 07:56:41)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx A +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 35849
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 918f863f44dfa9d9010000006b005199328407fa27494285 (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	A
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:41 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records AAAA ---
+$ dig @172.30.0.100 gob.mx AAAA    (2026-11-20 07:56:42)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx AAAA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 37893
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: f05702fc5d535201010000006b00519a9d0fc0ec8a22a382 (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	AAAA
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:42 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx AAAA    (2026-11-20 07:56:43)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx AAAA +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 53794
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 3e1016af6320a03e010000006b00519bccde38556b4da169 (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	AAAA
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:43 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records DNSKEY ---
+$ dig @172.30.0.100 gob.mx DNSKEY    (2026-11-20 07:56:45)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx DNSKEY +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 19302
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 42bbac214d84e49c010000006b00519d3eccb768e5d38b3b (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	DNSKEY
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:45 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx DNSKEY    (2026-11-20 07:56:46)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx DNSKEY +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 21899
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 839a702a6c7bfb3a010000006b00519e2f439c5fdaf31025 (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	DNSKEY
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:46 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records RRSIG ---
+$ dig @172.30.0.100 gob.mx RRSIG    (2026-11-20 07:56:47)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx RRSIG +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 59325
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 90d91d9ddfe1eaa7010000006b00519f3c2bfe5a0c068932 (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	RRSIG
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:47 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx RRSIG    (2026-11-20 07:56:48)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx RRSIG +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 36221
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 88d95792c59818a1010000006b0051a0826aae7594595740 (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	RRSIG
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:48 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records DS ---
+$ dig @172.30.0.100 gob.mx DS    (2026-11-20 07:56:49)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx DS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 37051
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: f611af02fba3e305010000006b0051a1ee318abd2c23c6c2 (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	DS
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:49 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx DS    (2026-11-20 07:56:51)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx DS +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 24831
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 8128fca71f724cd5010000006b0051a3ad1549029d9ac49a (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	DS
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:51 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records NSEC ---
+$ dig @172.30.0.100 gob.mx NSEC    (2026-11-20 07:56:52)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx NSEC +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 39976
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 8bc7781d30cbac23010000006b0051a49f75055a5f54556a (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	NSEC
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:52 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx NSEC    (2026-11-20 07:56:53)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx NSEC +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 59016
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 800c37f72c6e6aec010000006b0051a55cdd644f0e00c82b (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	NSEC
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:53 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
+--- Records NSEC3 ---
+$ dig @172.30.0.100 gob.mx NSEC3    (2026-11-20 07:56:54)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gob.mx NSEC3 +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 61669
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 6365b6b2af1ec0d2010000006b0051a6078fb46d1cc173d5 (good)
+;; QUESTION SECTION:
+;gob.mx.				IN	NSEC3
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:54 UTC 2026
+;; MSG SIZE  rcvd: 111
+
+
+$ dig @172.30.0.100 unam.mx NSEC3    (2026-11-20 07:56:55)
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 unam.mx NSEC3 +time=10 +tries=1
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 6098
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 6c230cb54bb56820010000006b0051a77267baa638f607aa (good)
+;; QUESTION SECTION:
+;unam.mx.			IN	NSEC3
+
+;; AUTHORITY SECTION:
+.			10800	IN	SOA	ns.root. admin.root. 2026081601 3600 900 604800 86400
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Fri Nov 20 13:56:55 UTC 2026
+;; MSG SIZE  rcvd: 112
+
+
