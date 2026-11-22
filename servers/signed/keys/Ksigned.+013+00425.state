@@ -1,0 +1,19 @@
+; This is the state of key 425, for signed.
+Algorithm: 13
+Length: 256
+Lifetime: 0
+KSK: yes
+ZSK: yes
+Generated: 20261122002647 (Sun Nov 22 00:26:47 2026)
+Published: 20261122002647 (Sun Nov 22 00:26:47 2026)
+Active: 20261122002647 (Sun Nov 22 00:26:47 2026)
+PublishCDS: 20261123013147 (Mon Nov 23 01:31:47 2026)
+DNSKEYChange: 20261122002647 (Sun Nov 22 00:26:47 2026)
+ZRRSIGChange: 20261122002647 (Sun Nov 22 00:26:47 2026)
+KRRSIGChange: 20261122002647 (Sun Nov 22 00:26:47 2026)
+DSChange: 20261122002647 (Sun Nov 22 00:26:47 2026)
+DNSKEYState: rumoured
+ZRRSIGState: rumoured
+KRRSIGState: rumoured
+DSState: hidden
+GoalState: omnipresent

@@ -1,0 +1,18 @@
+$TTL 86400
+@ IN SOA ns.signed. admin.signed. (
+    2026082003   ; serial
+    3600         ; refresh
+    900          ; retry
+    604800       ; expire
+    86400 )      ; negative TTL
+@ IN NS ns.signed.
+ns.signed. IN A 172.30.0.40
+
+; Delegation to beta
+beta.signed.    IN NS ns.beta.signed.
+ns.beta.signed. IN A  172.30.0.50     ; glue record
+beta.signed.    IN DS 45694 13 2 40CD441091EFA038156A783CC9710CCEED2F1A38C24F5B5003F9CAAC7B9D0289
+
+; Delegation to gamma
+gamma.signed.    IN NS ns.gamma.signed.
+ns.gamma.signed. IN A  172.30.0.60     ; glue record

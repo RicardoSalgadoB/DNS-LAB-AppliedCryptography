@@ -1,0 +1,10 @@
+$TTL 86400
+@ IN SOA ns.gamma.signed. admin.gamma.signed. (
+    2026082001
+    3600
+    900
+    604800
+    86400 )
+@   IN NS ns.gamma.signed.
+ns  IN A  172.30.0.50
+www IN A  172.30.0.51      ; any IP you like for the web host

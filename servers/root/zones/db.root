@@ -19,3 +19,11 @@ ns.root. IN A 172.30.0.10
 
 unsigned. IN NS ns.unsigned.
 ns.unsigned. IN A 172.30.0.20
+
+; ==================================
+; TLD SIGNED
+; ==================================
+
+signed. IN NS ns.signed.
+ns.signed. IN A 172.30.0.40
+signed. IN DS 425 13 2 DBAB6AF80A212B6214E89FA7133F13C909312E2FCAD3021727AB001670021D28

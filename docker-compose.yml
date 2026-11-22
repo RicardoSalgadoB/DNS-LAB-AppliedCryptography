@@ -9,7 +9,8 @@ services:
     networks: { dnsnet: { ipv4_address: 172.30.0.10 } }
     volumes:
       - ./servers/root/named.conf:/etc/bind/named.conf:ro
-      - ./servers/root/zones:/var/lib/bind:ro
+      - ./servers/root/zones:/var/lib/bind
+      - ./servers/root/keys:/var/cache/bind
 
   unsigned:
     <<: *bind
@@ -27,6 +28,32 @@ services:
       - ./servers/alpha/named.conf:/etc/bind/named.conf:ro
       - ./servers/alpha/zones:/var/lib/bind:ro
 
+  signed:
+    <<: *bind
+    container_name: signed
+    networks: { dnsnet: { ipv4_address: 172.30.0.40 } }
+    volumes:
+      - ./servers/signed/named.conf:/etc/bind/named.conf:ro
+      - ./servers/signed/zones:/var/lib/bind
+      - ./servers/signed/keys:/var/cache/bind
+
+  beta:
+    <<: *bind
+    container_name: beta
+    networks: { dnsnet: { ipv4_address: 172.30.0.50 } }
+    volumes:
+      - ./servers/beta/named.conf:/etc/bind/named.conf:ro
+      - ./servers/beta/zones:/var/lib/bind
+      - ./servers/beta/keys:/var/cache/bind
+
+  gamma:
+    <<: *bind
+    container_name: gamma
+    networks: { dnsnet: { ipv4_address: 172.30.0.60 } }
+    volumes:
+      - ./servers/gamma/named.conf:/etc/bind/named.conf:ro
+      - ./servers/gamma/zones:/var/lib/bind:ro
+
   recursive1:
     <<: *bind
     container_name: recursive1
@@ -42,6 +69,14 @@ services:
     volumes:
       - ./servers/recursive2/named.conf:/etc/bind/named.conf:ro
       - ./servers/recursive2/zones:/var/lib/bind:ro
+
+  recursive3:
+    <<: *bind
+    container_name: recursive3
+    networks: { dnsnet: { ipv4_address: 172.30.0.102 } }
+    volumes:
+      - ./servers/recursive3/named.conf:/etc/bind/named.conf:ro
+      - ./servers/recursive3/zones:/var/lib/bind:ro
 
   client:
     image: nicolaka/netshoot      # multi-arch, runs natively on ARM
