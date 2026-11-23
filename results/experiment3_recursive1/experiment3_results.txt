@@ -1,0 +1,195 @@
+===== dig @172.30.0.100 www.beta.signed A +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 www.beta.signed A +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 61544
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: ca51fa2b1fd63daf010000006b0394e2937d58f3145eaa08 (good)
+;; QUESTION SECTION:
+;www.beta.signed.		IN	A
+
+;; ANSWER SECTION:
+www.beta.signed.	86400	IN	A	172.30.0.51
+www.beta.signed.	86400	IN	RRSIG	A 13 3 86400 20261205184628 20261121232156 45694 beta.signed. MKhLWiWD1+8++trKwfplu8W30YBn6CJMA07sWdpjZ1yUs3+CCYg4W+yk Mw6jtyxFNRmSQpubuWhD6/rFci8WpQ==
+
+;; Query time: 10 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:34 UTC 2026
+;; MSG SIZE  rcvd: 195
+
+===== dig @172.30.0.100 www.gamma.signed A +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 www.gamma.signed A +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 46308
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 03c99f26db23e3ce010000006b0394e3dccc316677ba67eb (good)
+;; QUESTION SECTION:
+;www.gamma.signed.		IN	A
+
+;; ANSWER SECTION:
+www.gamma.signed.	86400	IN	A	172.30.0.61
+
+;; Query time: 3 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:35 UTC 2026
+;; MSG SIZE  rcvd: 89
+
+===== dig @172.30.0.100 beta.signed DNSKEY +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 beta.signed DNSKEY +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29900
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 73123643518342ac010000006b0394e3960e90dbaa274b8f (good)
+;; QUESTION SECTION:
+;beta.signed.			IN	DNSKEY
+
+;; ANSWER SECTION:
+beta.signed.		3600	IN	DNSKEY	257 3 13 /utSnkkkUI9cRJ6wHcoUTcDb5jLP6FdZv07QoVMu1bGCGRS2C331ruVd WJMeQ7dk/7uMXEiuBAGe0apoDxoyVA==
+beta.signed.		3600	IN	RRSIG	DNSKEY 13 2 3600 20261206002156 20261121232156 45694 beta.signed. 1AKYgatRosgkT8iW7hqBn91ockF8Q+p4XKvRyHJjvhbNzrcaXvO+1V4A kBKN8ESTmTaroamMpgaZC9FLkLFDZw==
+
+;; Query time: 2 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:35 UTC 2026
+;; MSG SIZE  rcvd: 255
+
+===== dig @172.30.0.100 beta.signed DS +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 beta.signed DS +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 60876
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: aadf9fb596a428f7010000006b0394e363e569630f18f2e8 (good)
+;; QUESTION SECTION:
+;beta.signed.			IN	DS
+
+;; ANSWER SECTION:
+beta.signed.		86400	IN	DS	45694 13 2 40CD441091EFA038156A783CC9710CCEED2F1A38C24F5B5003F9CAAC 7B9D0289
+beta.signed.		86400	IN	RRSIG	DS 13 2 86400 20261205145134 20261121232647 425 signed. XT/5Zz2Th9n/QtA/0f6BtOFSjRUPjpH3mlyslE3ffQHe2nLys9JpUqzW V00VwmGvuxsJTPCEiBqTdA1sTKP8cA==
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:35 UTC 2026
+;; MSG SIZE  rcvd: 218
+
+===== dig @172.30.0.100 gamma.signed DS +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 gamma.signed DS +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17473
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 9ff5cb38b8543a5b010000006b0394e3125f75f05a88ac8b (good)
+;; QUESTION SECTION:
+;gamma.signed.			IN	DS
+
+;; AUTHORITY SECTION:
+gamma.signed.		10800	IN	RRSIG	NSEC 13 2 86400 20261205145134 20261121232647 425 signed. YkY09pTrET3rVlG3pJKcw+4a3B9twxuOaIyDa+DLwDGSPmLIFZ/EGW+P JZw9vfonzQG+josBtc9YqgXkiW4DVA==
+gamma.signed.		10800	IN	NSEC	ns.signed. NS RRSIG NSEC
+signed.			10800	IN	SOA	ns.signed. admin.signed. 2026082006 3600 900 604800 86400
+signed.			10800	IN	RRSIG	SOA 13 1 86400 20261206002825 20261121232825 425 signed. /2DED2PJ3YerW8++I2D6F7Ci2pKGIlDDExI+LNZSJ0B7zXpVzfLwGwcm f0fV3bd40ZX3ae9LEJNadfYZQlFkuw==
+
+;; Query time: 2 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:35 UTC 2026
+;; MSG SIZE  rcvd: 346
+
+===== dig @172.30.0.100 signed DNSKEY +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 signed DNSKEY +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3022
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: 843cd24a788a095f010000006b0394e38ae0de03a1f06fb9 (good)
+;; QUESTION SECTION:
+;signed.				IN	DNSKEY
+
+;; ANSWER SECTION:
+signed.			3600	IN	DNSKEY	257 3 13 PgyecNsSwJru6Y2dc+OxLnyYZA8Qun2jbiga/mNuZ7P5FWltRc0wAKy3 w1iIghujE42tUjdeHoPgUDLuhpCDcQ==
+signed.			3600	IN	RRSIG	DNSKEY 13 1 3600 20261206002647 20261121232647 425 signed. 28G3g2Lapk0uCLZPPkK8HxIlBhdC7w2LjwupL9DmaZpyNYJte4uugqru BXhAwoWXHaC1eR4YsudIby30QWrf6w==
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:35 UTC 2026
+;; MSG SIZE  rcvd: 245
+
+===== dig @172.30.0.100 . DNSKEY +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 . DNSKEY +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28086
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: c6beae946047555e010000006b0394e32ddfa5c64dc5f4ca (good)
+;; QUESTION SECTION:
+;.				IN	DNSKEY
+
+;; ANSWER SECTION:
+.			3600	IN	DNSKEY	257 3 13 ozCr8M+jzrJrna5LkxegGtPaYaALVoRVvSIB9CeREU7ux9VA7Nhqf5gA YJBjY+v1r9T6nPuJIehdmhkf3bUjQw==
+.			3600	IN	RRSIG	DNSKEY 13 0 3600 20261206002933 20261121232933 40607 . OHYbk5uOlXvB7OQcM+u2fNtQUPBg5HSPCK7l3f4JZofQuEvH1/W47Tj5 FhXa+402IjnE6YIGzCF+U/Xt2boYrw==
+
+;; Query time: 0 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:35 UTC 2026
+;; MSG SIZE  rcvd: 229
+
+===== dig @172.30.0.100 noexiste.beta.signed A +dnssec =====
+
+; <<>> DiG 9.20.23 <<>> @172.30.0.100 noexiste.beta.signed A +dnssec
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 15640
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+; COOKIE: cf3b9e0b1e4f1302010000006b0394e32abaabbe20c5a2aa (good)
+;; QUESTION SECTION:
+;noexiste.beta.signed.		IN	A
+
+;; AUTHORITY SECTION:
+beta.signed.		10800	IN	SOA	ns.gamma.signed. admin.gamma.signed. 2026082004 3600 900 604800 86400
+beta.signed.		10800	IN	RRSIG	SOA 13 2 86400 20261206002647 20261121232647 45694 beta.signed. p/bS3cWEPIMrFmsZOcp2y+C6k398hzVwCf0afx2Exu+VmT+5mM0G2A6z UnyA6MPtLWazeWVtJzT6xqVDAuHD3Q==
+beta.signed.		10800	IN	RRSIG	NSEC 13 2 86400 20261205202904 20261121232647 45694 beta.signed. pkAcwkJyYsHRhQceO1uPBFuvs1EtDi/SJcj+fVCcjfwZR12yr0ZNOIqX UHLGV2syDW49F9s1KAuwWipkeM9aig==
+beta.signed.		10800	IN	NSEC	ns.beta.signed. NS SOA RRSIG NSEC DNSKEY
+
+;; Query time: 1 msec
+;; SERVER: 172.30.0.100#53(172.30.0.100) (UDP)
+;; WHEN: Mon Nov 23 01:20:35 UTC 2026
+;; MSG SIZE  rcvd: 385
+
